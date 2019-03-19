@@ -12,6 +12,10 @@ namespace CollegeRegistration
 {
     public partial class StudentAddForm : Form
     {
+        //charnesky suggested doing new forms to be the thing that adds new entries.
+        //doing that here, this is a form that just has 2 boxes to add a new student.
+        //enter data hit add, it adds and then closes itself
+
         public RegistrationEntities RegistrationEntities;
         public StudentAddForm()
         {
@@ -27,11 +31,6 @@ namespace CollegeRegistration
             RegistrationEntities = entities;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-            
-            
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
