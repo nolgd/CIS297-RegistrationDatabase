@@ -13,7 +13,7 @@ namespace CollegeRegistration
     public partial class Form1 : Form
     {
 
-        RegistrationEntities RegistrationEntities;
+        public RegistrationEntities RegistrationEntities { get; set; }
         public Form1()
         {
             InitializeComponent();
@@ -86,7 +86,7 @@ namespace CollegeRegistration
             updateMajorsList();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)//this is the weirdly placed add student
         {
             var sectionsForm = new Sections();
             sectionsForm.Show();
@@ -95,6 +95,18 @@ namespace CollegeRegistration
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            StudentAddForm studentAddForm = new StudentAddForm(RegistrationEntities);
+            studentAddForm.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)//this is the refresh button
+        {
+            updateStudentsList();
+            updateMajorsList();
         }
     }
 }
