@@ -1,0 +1,9 @@
+X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\Registration\bin\Debug\Registration.dacpac
+X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\Registration\bin\Debug\Registration.dll
+X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\Registration\bin\Debug\Registration.pdb
+X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\Registration\obj\Debug\Model.xml
+X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\Registration\obj\Debug\refactor.xml
+X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\Registration\obj\Debug\postdeploy.sql
+X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\Registration\obj\Debug\predeploy.sql
+X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\Registration\obj\Debug\Registration.dll
+X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\Registration\obj\Debug\Registration.pdb
