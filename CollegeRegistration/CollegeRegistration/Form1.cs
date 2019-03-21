@@ -124,5 +124,24 @@ namespace CollegeRegistration
             MajorAddForm MajorAddForm = new MajorAddForm(RegistrationEntities);
             MajorAddForm.Show();
         }
+
+        private void button7_Click(object sender, EventArgs e)//faculty
+        {
+            FacultyAddForm FacultyAddForm = new FacultyAddForm(RegistrationEntities);
+            FacultyAddForm.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)//enrollment
+        {
+            EnrollmentAddForm EnrollmentAddForm = new EnrollmentAddForm(RegistrationEntities);
+            EnrollmentAddForm.Show();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            CourseAddForm CourseAddForm = new CourseAddForm(RegistrationEntities);
+            CourseAddForm.Show();
+        }
+
     }
 }
