@@ -150,7 +150,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 10;
-            this.button3.Text = "Add Student";
+            this.button3.Text = "Edit Student";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -170,7 +170,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 12;
-            this.button5.Text = "Add Section";
+            this.button5.Text = "Edit Section";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -180,7 +180,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 13;
-            this.button6.Text = "Add Major";
+            this.button6.Text = "Edit Major";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -190,7 +190,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 23);
             this.button7.TabIndex = 14;
-            this.button7.Text = "Add Faculty";
+            this.button7.Text = "Edit Faculty";
             this.button7.UseVisualStyleBackColor = true;
             // 
             // button8
@@ -199,7 +199,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(88, 23);
             this.button8.TabIndex = 15;
-            this.button8.Text = "Add Enrollment";
+            this.button8.Text = "Edit Enrollment";
             this.button8.UseVisualStyleBackColor = true;
             // 
             // button9
@@ -208,7 +208,7 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(88, 23);
             this.button9.TabIndex = 16;
-            this.button9.Text = "Add Course";
+            this.button9.Text = "Edit Course";
             this.button9.UseVisualStyleBackColor = true;
             // 
             // Form1

@@ -13,7 +13,7 @@ namespace CollegeRegistration
     public partial class Form1 : Form
     {
 
-        public RegistrationEntities RegistrationEntities { get; set; }
+        public RegistrationEntities RegistrationEntities { get; set; }//this like has all the info from the db and communicates or something idk.
         public Form1()
         {
             InitializeComponent();
@@ -97,17 +97,21 @@ namespace CollegeRegistration
 
         }
 
+        private void button4_Click(object sender, EventArgs e)//this is the refresh button
+        {
+            updateStudentsList();
+            updateMajorsList();
+        }
+
+        //here all the buttons to create the individual table forms.
+        //These are always new forms currently and close when you add a thing which maybe I need to change.
         private void button3_Click(object sender, EventArgs e)//Student form button
         {
             StudentAddForm studentAddForm = new StudentAddForm(RegistrationEntities);
             studentAddForm.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)//this is the refresh button
-        {
-            updateStudentsList();
-            updateMajorsList();
-        }
+        
 
         private void button5_Click(object sender, EventArgs e)//section form buton
         {
