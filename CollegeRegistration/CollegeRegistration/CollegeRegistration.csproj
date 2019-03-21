@@ -143,6 +143,15 @@
     <Compile Include="StudentAddForm.Designer.cs">
       <DependentUpon>StudentAddForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CourseAddForm.resx">
+      <DependentUpon>CourseAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnrollmentAddForm.resx">
+      <DependentUpon>EnrollmentAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacultyAddForm.resx">
+      <DependentUpon>FacultyAddForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

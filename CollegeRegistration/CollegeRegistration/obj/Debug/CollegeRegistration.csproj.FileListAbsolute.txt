@@ -13,3 +13,8 @@ X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistr
 X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\CollegeRegistration\obj\Debug\CollegeRegistration.exe
 X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\CollegeRegistration\obj\Debug\CollegeRegistration.pdb
 X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\CollegeRegistration\obj\Debug\CollegeRegistration.StudentAddForm.resources
+X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\CollegeRegistration\obj\Debug\CollegeRegistration.CourseAddForm.resources
+X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\CollegeRegistration\obj\Debug\CollegeRegistration.EnrollmentAddForm.resources
+X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\CollegeRegistration\obj\Debug\CollegeRegistration.FacultyAddForm.resources
+X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\CollegeRegistration\obj\Debug\CollegeRegistration.MajorAddForm.resources
+X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\CollegeRegistration\obj\Debug\CollegeRegistration.SectionAddForm.resources

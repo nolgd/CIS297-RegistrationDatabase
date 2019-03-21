@@ -97,7 +97,7 @@ namespace CollegeRegistration
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)//Student form button
         {
             StudentAddForm studentAddForm = new StudentAddForm(RegistrationEntities);
             studentAddForm.Show();
@@ -107,6 +107,18 @@ namespace CollegeRegistration
         {
             updateStudentsList();
             updateMajorsList();
+        }
+
+        private void button5_Click(object sender, EventArgs e)//section form buton
+        {
+            SectionAddForm sectionAddForm = new SectionAddForm(RegistrationEntities);
+            sectionAddForm.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)//major form button
+        {
+            MajorAddForm MajorAddForm = new MajorAddForm(RegistrationEntities);
+            MajorAddForm.Show();
         }
     }
 }

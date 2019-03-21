@@ -22,5 +22,19 @@ namespace CollegeRegistration
             InitializeComponent();
             RegistrationEntities = d;
         }
+
+       
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Major newMajor = new Major
+            {
+                Name = textBox2.Text,
+                College = textBox2.Text
+
+            };
+            RegistrationEntities.Majors.Add(newMajor);
+            RegistrationEntities.SaveChanges();
+            this.Close();
+        }
     }
 }

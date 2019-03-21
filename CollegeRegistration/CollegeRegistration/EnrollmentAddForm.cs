@@ -24,5 +24,22 @@ namespace CollegeRegistration
             RegistrationEntities = d;
         }
 
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Enrollment newEnrollment = new Enrollment
+            {
+                SectionID = Convert.ToInt32(textBox1.Text),
+                StudentID = Convert.ToInt32(textBox2.Text),
+                Grade = textBox3.Text
+            };
+            RegistrationEntities.Enrollments.Add(newEnrollment);
+            RegistrationEntities.SaveChanges();
+            this.Close();
+        }
     }
 }

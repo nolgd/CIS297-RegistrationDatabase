@@ -23,5 +23,18 @@ namespace CollegeRegistration
             RegistrationEntities = d;
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Course newCourse = new Course
+            {
+                Name = textBox1.Text,
+                Number = textBox2.Text,
+                Credits = Convert.ToInt32(textBox3.Text),
+                Department = textBox4.Text
+            };
+            RegistrationEntities.Courses.Add(newCourse);
+            RegistrationEntities.SaveChanges();
+            this.Close();
+        }
     }
 }

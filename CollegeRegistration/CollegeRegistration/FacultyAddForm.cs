@@ -23,5 +23,17 @@ namespace CollegeRegistration
             RegistrationEntities = d;
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Faculty newFaculty = new Faculty
+            {
+                Name = textBox1.Text,
+                PhoneNumber = textBox2.Text
+            };
+            RegistrationEntities.Faculties.Add(newFaculty);
+            RegistrationEntities.SaveChanges();
+            this.Close();
+
+        }
     }
 }
