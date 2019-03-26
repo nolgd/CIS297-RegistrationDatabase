@@ -43,5 +43,14 @@ namespace CollegeRegistration
             RegistrationEntities.SaveChanges();
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)//delete button
+        {
+            int mID = Convert.ToInt32(textBox3.Text);
+            Student student = RegistrationEntities.Students.Where(b=>(b.Name==textBox2.Text)&&(b.MajorID ==mID)).First();
+            RegistrationEntities.Students.Remove(student);
+            RegistrationEntities.SaveChanges();
+            this.Close();
+        }
     }
 }

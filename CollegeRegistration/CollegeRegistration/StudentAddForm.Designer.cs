@@ -81,7 +81,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(224, 45);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(87, 23);
             this.button1.TabIndex = 7;
             this.button1.Text = "Add Student";
             this.button1.UseVisualStyleBackColor = true;
@@ -105,10 +105,11 @@
             // 
             this.button2.Location = new System.Drawing.Point(224, 83);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(87, 23);
             this.button2.TabIndex = 10;
-            this.button2.Text = "Delete";
+            this.button2.Text = "Delete Student";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // StudentAddForm
             // 
