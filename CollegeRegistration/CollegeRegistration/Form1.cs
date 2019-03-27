@@ -25,7 +25,7 @@ namespace CollegeRegistration
             TableSelector.Items.Add("Faculty");
             TableSelector.Items.Add("Enrollments");
             TableSelector.Items.Add("Courses");
-
+            /*
             updateStudentsList();
             updateMajorsList();
 
@@ -37,7 +37,7 @@ namespace CollegeRegistration
             }
 
             // linq to ojbects without lambda extensions syntax
-            /*
+            
             var query = from Student student in RegistrationEntities.Students
                         where student.Name == "Eric"
                         select student;
@@ -51,20 +51,8 @@ namespace CollegeRegistration
             //RegistrationEntities.Students.Remove()
         }
 
-        private void addStudentButton_Click(object sender, EventArgs e)
+        private void addStudentButton_Click(object sender, EventArgs e)//this is the show stuff button
         {
-            /*
-            Student newStudent = new Student
-            {
-                Name = textBox1.Text,
-                MajorID = 1
-            };
-            RegistrationEntities.Students.Add(newStudent);
-            RegistrationEntities.SaveChanges();
-            updateStudentsList();
-            List<string> sample = new List<string>();
-            sample.Add("swag");
-            sample.Add("money");*/
             if (TableSelector.Text == "Students")
             {
                 var tempStudents = RegistrationEntities.Students.ToList();

@@ -11,4 +11,10 @@ namespace CollegeRegistration
 
         public string ToStringy => $"{Name} {Major.Name} {Major.College}";
     }
+
+    public partial class Majors
+    {
+        public string ToStringy => $" ";
+    }
+
 }
