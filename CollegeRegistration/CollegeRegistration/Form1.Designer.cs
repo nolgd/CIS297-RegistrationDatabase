@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.addStudentButton = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.studentsList = new System.Windows.Forms.ListBox();
             this.majorsListBox = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,41 +43,24 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.TableSelector = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(106, 157);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(140, 20);
-            this.textBox1.TabIndex = 0;
             // 
             // addStudentButton
             // 
-            this.addStudentButton.Location = new System.Drawing.Point(250, 154);
+            this.addStudentButton.Location = new System.Drawing.Point(267, 103);
             this.addStudentButton.Margin = new System.Windows.Forms.Padding(2);
             this.addStudentButton.Name = "addStudentButton";
             this.addStudentButton.Size = new System.Drawing.Size(102, 44);
             this.addStudentButton.TabIndex = 1;
-            this.addStudentButton.Text = "Add Student";
+            this.addStudentButton.Text = "Show Stuff";
             this.addStudentButton.UseVisualStyleBackColor = true;
             this.addStudentButton.Click += new System.EventHandler(this.addStudentButton_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 157);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Student Name";
             // 
             // studentsList
             // 
             this.studentsList.FormattingEnabled = true;
-            this.studentsList.Location = new System.Drawing.Point(32, 201);
+            this.studentsList.Location = new System.Drawing.Point(12, 40);
             this.studentsList.Margin = new System.Windows.Forms.Padding(2);
             this.studentsList.Name = "studentsList";
             this.studentsList.Size = new System.Drawing.Size(251, 173);
@@ -88,7 +69,7 @@
             // majorsListBox
             // 
             this.majorsListBox.FormattingEnabled = true;
-            this.majorsListBox.Location = new System.Drawing.Point(450, 203);
+            this.majorsListBox.Location = new System.Drawing.Point(590, 163);
             this.majorsListBox.Margin = new System.Windows.Forms.Padding(2);
             this.majorsListBox.Name = "majorsListBox";
             this.majorsListBox.Size = new System.Drawing.Size(251, 173);
@@ -97,7 +78,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(448, 159);
+            this.label2.Location = new System.Drawing.Point(588, 119);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 13);
@@ -106,7 +87,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(668, 157);
+            this.button1.Location = new System.Drawing.Point(808, 117);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(95, 37);
@@ -117,7 +98,7 @@
             // 
             // majorNameTextBox
             // 
-            this.majorNameTextBox.Location = new System.Drawing.Point(520, 157);
+            this.majorNameTextBox.Location = new System.Drawing.Point(660, 117);
             this.majorNameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.majorNameTextBox.Name = "majorNameTextBox";
             this.majorNameTextBox.Size = new System.Drawing.Size(140, 20);
@@ -126,7 +107,7 @@
             // ericsClassesLabel
             // 
             this.ericsClassesLabel.AutoSize = true;
-            this.ericsClassesLabel.Location = new System.Drawing.Point(309, 389);
+            this.ericsClassesLabel.Location = new System.Drawing.Point(657, 361);
             this.ericsClassesLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ericsClassesLabel.Name = "ericsClassesLabel";
             this.ericsClassesLabel.Size = new System.Drawing.Size(74, 13);
@@ -156,7 +137,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(336, 282);
+            this.button4.Location = new System.Drawing.Point(688, 12);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 11;
@@ -214,11 +195,21 @@
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
+            // TableSelector
+            // 
+            this.TableSelector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.TableSelector.FormattingEnabled = true;
+            this.TableSelector.Location = new System.Drawing.Point(268, 77);
+            this.TableSelector.Name = "TableSelector";
+            this.TableSelector.Size = new System.Drawing.Size(121, 21);
+            this.TableSelector.TabIndex = 17;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(962, 552);
+            this.Controls.Add(this.TableSelector);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -233,9 +224,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.majorNameTextBox);
             this.Controls.Add(this.studentsList);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.addStudentButton);
-            this.Controls.Add(this.textBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -246,10 +235,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button addStudentButton;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox studentsList;
         private System.Windows.Forms.ListBox majorsListBox;
         private System.Windows.Forms.Label label2;
@@ -264,6 +250,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.ComboBox TableSelector;
     }
 }
 

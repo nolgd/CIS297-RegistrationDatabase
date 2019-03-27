@@ -18,6 +18,14 @@ namespace CollegeRegistration
         {
             InitializeComponent();
             RegistrationEntities = new RegistrationEntities();
+
+            TableSelector.Items.Add("Students");
+            TableSelector.Items.Add("Sections");
+            TableSelector.Items.Add("Majors");
+            TableSelector.Items.Add("Faculty");
+            TableSelector.Items.Add("Enrollments");
+            TableSelector.Items.Add("Courses");
+
             updateStudentsList();
             updateMajorsList();
 
@@ -45,6 +53,7 @@ namespace CollegeRegistration
 
         private void addStudentButton_Click(object sender, EventArgs e)
         {
+            /*
             Student newStudent = new Student
             {
                 Name = textBox1.Text,
@@ -53,6 +62,41 @@ namespace CollegeRegistration
             RegistrationEntities.Students.Add(newStudent);
             RegistrationEntities.SaveChanges();
             updateStudentsList();
+            List<string> sample = new List<string>();
+            sample.Add("swag");
+            sample.Add("money");*/
+            if (TableSelector.Text == "Students")
+            {
+                var tempStudents = RegistrationEntities.Students.ToList();
+                studentsList.DataSource = tempStudents;
+                studentsList.DisplayMember = "ToStringy";
+
+            }else if (TableSelector.Text == "Courses")
+            {
+                var tempCourses = RegistrationEntities.Courses.ToList();
+                studentsList.DataSource = tempCourses;
+            }
+            else if (TableSelector.Text == "Enrollments")
+            {
+                var tempEnrollments = RegistrationEntities.Enrollments.ToList();
+                studentsList.DataSource = tempEnrollments;
+            }
+            else if (TableSelector.Text == "Faculty")
+            {
+                var temp = RegistrationEntities.Faculties.ToList();
+                studentsList.DataSource = temp;
+            }
+            else if (TableSelector.Text == "Majors")
+            {
+                var temp = RegistrationEntities.Majors.ToList();
+                studentsList.DataSource = temp;
+            }
+            else if (TableSelector.Text == "Sections")
+            {
+                var temp = RegistrationEntities.Sections.ToList();
+                studentsList.DataSource = temp;
+            }
+
 
         }
 

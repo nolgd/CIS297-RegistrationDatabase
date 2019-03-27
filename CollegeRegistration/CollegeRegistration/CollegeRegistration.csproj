@@ -143,6 +143,7 @@
     <Compile Include="StudentAddForm.Designer.cs">
       <DependentUpon>StudentAddForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentExtrathings.cs" />
     <EmbeddedResource Include="CourseAddForm.resx">
       <DependentUpon>CourseAddForm.cs</DependentUpon>
     </EmbeddedResource>
