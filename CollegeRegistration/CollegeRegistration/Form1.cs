@@ -63,26 +63,31 @@ namespace CollegeRegistration
             {
                 var tempCourses = RegistrationEntities.Courses.ToList();
                 studentsList.DataSource = tempCourses;
+                studentsList.DisplayMember = "ToStringy";
             }
             else if (TableSelector.Text == "Enrollments")
             {
                 var tempEnrollments = RegistrationEntities.Enrollments.ToList();
                 studentsList.DataSource = tempEnrollments;
+                studentsList.DisplayMember = "ToStringy";
             }
             else if (TableSelector.Text == "Faculty")
             {
                 var temp = RegistrationEntities.Faculties.ToList();
                 studentsList.DataSource = temp;
+                studentsList.DisplayMember = "ToStringy";
             }
             else if (TableSelector.Text == "Majors")
             {
                 var temp = RegistrationEntities.Majors.ToList();
                 studentsList.DataSource = temp;
+                studentsList.DisplayMember = "ToStringy";
             }
             else if (TableSelector.Text == "Sections")
             {
                 var temp = RegistrationEntities.Sections.ToList();
                 studentsList.DataSource = temp;
+                studentsList.DisplayMember = "ToStringy";
             }
 
 
