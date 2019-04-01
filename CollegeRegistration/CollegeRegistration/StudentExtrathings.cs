@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CollegeRegistration
+namespace CollegeRegistration//this file has the properties that allow the entries to print better in the boxes in the forms.
 {
     public partial class Student
     {
@@ -19,7 +19,7 @@ namespace CollegeRegistration
 
     public partial class Section
     {
-        public string ToStringy => $"{CourseID} {FacultyID} {Day} {Time} {Semester}";
+        public string ToStringy => $"{Course.Name} {Faculty.Name} {Day} {Time} {Semester}";
     }
 
     public partial class Faculty
@@ -34,7 +34,7 @@ namespace CollegeRegistration
 
     public partial class Enrollment
     {
-        public string ToStringy => $"{SectionID} {StudentID} {Grade}";
+        public string ToStringy => $"{SectionID} {Student.Name} {Grade}";
     }
 
 }

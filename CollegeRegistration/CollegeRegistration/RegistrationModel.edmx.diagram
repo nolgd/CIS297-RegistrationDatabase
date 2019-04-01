@@ -6,11 +6,11 @@
     <edmx:Diagrams>
       <Diagram DiagramId="979301c7ff924f4da6997c3b9dc64392" Name="Diagram1">
         <EntityTypeShape EntityType="RegistrationModel.Course" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="RegistrationModel.Enrollment" Width="1.5" PointX="5.625" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="RegistrationModel.Faculty" Width="1.5" PointX="2.125" PointY="3.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="RegistrationModel.Major" Width="1.5" PointX="8.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RegistrationModel.Enrollment" Width="1.5" PointX="5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RegistrationModel.Faculty" Width="1.5" PointX="2.625" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RegistrationModel.Major" Width="1.5" PointX="7.875" PointY="3.375" IsExpanded="true" />
         <EntityTypeShape EntityType="RegistrationModel.Section" Width="1.5" PointX="2.625" PointY="0.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="RegistrationModel.Student" Width="1.5" PointX="8.5" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RegistrationModel.Student" Width="1.5" PointX="6.875" PointY="0.5" IsExpanded="true" />
         <AssociationConnector Association="RegistrationModel.FK_Section_Course" ManuallyRouted="false" />
         <AssociationConnector Association="RegistrationModel.FK_Enrollment_Section" ManuallyRouted="false" />
         <AssociationConnector Association="RegistrationModel.FK_Enrollment_Student" ManuallyRouted="false" />
