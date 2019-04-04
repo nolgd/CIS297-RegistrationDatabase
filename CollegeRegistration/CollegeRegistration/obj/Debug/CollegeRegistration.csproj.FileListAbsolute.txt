@@ -5,7 +5,6 @@ X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistr
 X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\CollegeRegistration\bin\Debug\EntityFramework.SqlServer.dll
 X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\CollegeRegistration\bin\Debug\EntityFramework.xml
 X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\CollegeRegistration\bin\Debug\EntityFramework.SqlServer.xml
-X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\CollegeRegistration\obj\Debug\CollegeRegistration.csprojResolveAssemblyReference.cache
 X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\CollegeRegistration\obj\Debug\CollegeRegistration.Form1.resources
 X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\CollegeRegistration\obj\Debug\CollegeRegistration.Properties.Resources.resources
 X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\CollegeRegistration\obj\Debug\CollegeRegistration.csproj.GenerateResource.Cache

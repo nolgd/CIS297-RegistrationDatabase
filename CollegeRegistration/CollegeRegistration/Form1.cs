@@ -13,7 +13,7 @@ namespace CollegeRegistration
     public partial class Form1 : Form
     {
 
-        public RegistrationEntities RegistrationEntities { get; set; }//this like has all the info from the db and communicates or something idk.
+        RegistrationEntities RegistrationEntities; //{ get; set; }//this like has all the info from the db and communicates or something idk.
         public Form1()
         {
             InitializeComponent();
@@ -102,26 +102,7 @@ namespace CollegeRegistration
             
         }
 
-        private void updateMajorsList()
-        {
-            foreach (var major in RegistrationEntities.Majors)
-            {
-                majorsListBox.Text += $"{major.Name}";
-            }
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Major newMajor = new Major()
-            {
-                Name = majorNameTextBox.Text,
-                College = "CECS"
-            };
-            RegistrationEntities.Majors.Add(newMajor);
-            RegistrationEntities.SaveChanges();
-            updateMajorsList();
-        }
+       
 
         private void button2_Click(object sender, EventArgs e)//this is the weirdly placed add student
         {
@@ -134,11 +115,7 @@ namespace CollegeRegistration
 
         }
 
-        private void button4_Click(object sender, EventArgs e)//this is the refresh button
-        {
-            updateStudentsList();
-            updateMajorsList();
-        }
+    
 
         //here all the buttons to create the individual table forms.
         //These are always new forms currently and close when you add a thing which maybe I need to change.
@@ -182,3 +159,31 @@ namespace CollegeRegistration
 
     }
 }
+
+/*
+private void updateMajorsList()
+{
+    foreach (var major in RegistrationEntities.Majors)
+    {
+        majorsListBox.Text += $"{major.Name}";
+    }
+
+}
+
+private void button1_Click(object sender, EventArgs e)
+{
+    Major newMajor = new Major()
+    {
+        Name = majorNameTextBox.Text,
+        College = "CECS"
+    };
+    RegistrationEntities.Majors.Add(newMajor);
+    RegistrationEntities.SaveChanges();
+    updateMajorsList();
+}
+    private void button4_Click(object sender, EventArgs e)//this is the refresh button
+        {
+            updateStudentsList();
+            updateMajorsList();
+        }
+*/

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace CollegeRegistration
 {
+   
     public partial class CourseAddForm : Form
     {
         public RegistrationEntities RegistrationEntities;

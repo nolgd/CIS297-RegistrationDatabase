@@ -30,12 +30,6 @@
         {
             this.addStudentButton = new System.Windows.Forms.Button();
             this.studentsList = new System.Windows.Forms.ListBox();
-            this.majorsListBox = new System.Windows.Forms.ListBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.majorNameTextBox = new System.Windows.Forms.TextBox();
-            this.ericsClassesLabel = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -66,65 +60,6 @@
             this.studentsList.Size = new System.Drawing.Size(251, 173);
             this.studentsList.TabIndex = 3;
             // 
-            // majorsListBox
-            // 
-            this.majorsListBox.FormattingEnabled = true;
-            this.majorsListBox.Location = new System.Drawing.Point(590, 163);
-            this.majorsListBox.Margin = new System.Windows.Forms.Padding(2);
-            this.majorsListBox.Name = "majorsListBox";
-            this.majorsListBox.Size = new System.Drawing.Size(251, 173);
-            this.majorsListBox.TabIndex = 7;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(588, 119);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Major Name";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(808, 117);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 37);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Add Major";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // majorNameTextBox
-            // 
-            this.majorNameTextBox.Location = new System.Drawing.Point(660, 117);
-            this.majorNameTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.majorNameTextBox.Name = "majorNameTextBox";
-            this.majorNameTextBox.Size = new System.Drawing.Size(140, 20);
-            this.majorNameTextBox.TabIndex = 4;
-            // 
-            // ericsClassesLabel
-            // 
-            this.ericsClassesLabel.AutoSize = true;
-            this.ericsClassesLabel.Location = new System.Drawing.Point(657, 361);
-            this.ericsClassesLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.ericsClassesLabel.Name = "ericsClassesLabel";
-            this.ericsClassesLabel.Size = new System.Drawing.Size(74, 13);
-            this.ericsClassesLabel.TabIndex = 8;
-            this.ericsClassesLabel.Text = "Eric\'s Classes:";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(751, 373);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 69);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Sections";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(12, 12);
@@ -143,7 +78,6 @@
             this.button4.TabIndex = 11;
             this.button4.Text = "Refresh";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -217,12 +151,6 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.ericsClassesLabel);
-            this.Controls.Add(this.majorsListBox);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.majorNameTextBox);
             this.Controls.Add(this.studentsList);
             this.Controls.Add(this.addStudentButton);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -230,19 +158,12 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.Button addStudentButton;
         private System.Windows.Forms.ListBox studentsList;
-        private System.Windows.Forms.ListBox majorsListBox;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox majorNameTextBox;
-        private System.Windows.Forms.Label ericsClassesLabel;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
