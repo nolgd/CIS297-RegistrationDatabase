@@ -26,12 +26,10 @@ namespace CollegeRegistration
             TableSelector.Items.Add("Enrollments");
             TableSelector.Items.Add("Courses");
 
-            TableSelector2.Items.Add("Students");
-            TableSelector2.Items.Add("Sections");
-            TableSelector2.Items.Add("Majors");
-            TableSelector2.Items.Add("Faculty");
-            TableSelector2.Items.Add("Enrollments");
-            TableSelector2.Items.Add("Courses");
+            TableSelector2.Items.Add("Enrollments by Student");
+            TableSelector2.Items.Add("Sections by Semester");
+            TableSelector2.Items.Add("Students by Major");
+            TableSelector2.Items.Add("Courses by Department");
 
         }
 
@@ -144,14 +142,14 @@ namespace CollegeRegistration
 
         private void TableSelector2_SelectedIndexChanged(object sender, EventArgs e)//THIS EVENT UPDATES THE INFORMATION IN ENTRY SELECTOR
         {
-            if (TableSelector2.Text == "Students")
+            if (TableSelector2.Text == "Enrollments by Student")
             {
                 var tempStudents = RegistrationEntities.Students.ToList();
                 EntrySelector2.DataSource = tempStudents;
                 EntrySelector2.DisplayMember = "ToStringy";
 
             }
-            else if (TableSelector2.Text == "Courses")
+            else if (TableSelector2.Text == "Courses by Department")
             {
                 var tempCourses = RegistrationEntities.Courses.ToList();
                 EntrySelector2.DataSource = tempCourses;
@@ -169,13 +167,13 @@ namespace CollegeRegistration
                 EntrySelector2.DataSource = temp;
                 EntrySelector2.DisplayMember = "ToStringy";
             }
-            else if (TableSelector2.Text == "Majors")
+            else if (TableSelector2.Text == "Students by Major")
             {
                 var temp = RegistrationEntities.Majors.ToList();
                 EntrySelector2.DataSource = temp;
                 EntrySelector2.DisplayMember = "ToStringy";
             }
-            else if (TableSelector2.Text == "Sections")
+            else if (TableSelector2.Text == "Sections by Semester")
             {
                 var temp = RegistrationEntities.Sections.ToList();
                 EntrySelector2.DataSource = temp;
@@ -186,18 +184,20 @@ namespace CollegeRegistration
         private void EntrySelector_SelectedIndexChanged(object sender, EventArgs e)//THEY SELECT THIS, AND IT SHOULD update SORTEDLISTBOX
         {
             
-            if (TableSelector2.Text == "Students")
+            if (TableSelector2.Text == "Enrollments by Student")
             {
                 var tempStudents = RegistrationEntities.Students.ToList();
 
 
                 sortedListBox.DataSource = tempStudents[EntrySelector2.SelectedIndex].Enrollments.ToList();
-                sortedListBox.DisplayMember = "ToString";
+                sortedListBox.DisplayMember = "ToStringy";
 
             }
-            else if (TableSelector2.Text == "Courses")
+            else if (TableSelector2.Text == "Courses by Department")//course by department
             {
                 var tempCourses = RegistrationEntities.Courses.ToList();
+
+                
             }
             else if (TableSelector2.Text == "Enrollments")
             {
@@ -207,11 +207,15 @@ namespace CollegeRegistration
             {
                 var temp = RegistrationEntities.Faculties.ToList();
             }
-            else if (TableSelector2.Text == "Majors")
+            else if (TableSelector2.Text == "Students by Major")
             {
                 var temp = RegistrationEntities.Majors.ToList();
+
+                sortedListBox.DataSource = temp[EntrySelector2.SelectedIndex].Students.ToList();
+                sortedListBox.DisplayMember = "ToStringy";
+
             }
-            else if (TableSelector2.Text == "Sections")
+            else if (TableSelector2.Text == "Courses by Department")//need sections by semester
             {
                 var temp = RegistrationEntities.Sections.ToList();
             }
@@ -257,7 +261,7 @@ namespace CollegeRegistration
                 EntrySelector.DataSource = temp;
                 EntrySelector.DisplayMember = "ToStringy";
             }
-            else if (TableSelector2.Text == "Sections")
+            else if (TableSelector2.Text == "Sections by Semester")
             {
                 var temp = RegistrationEntities.Sections.ToList();
                 EntrySelector.DataSource = temp;
