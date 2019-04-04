@@ -17,3 +17,4 @@ X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistr
 X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\CollegeRegistration\obj\Debug\CollegeRegistration.FacultyAddForm.resources
 X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\CollegeRegistration\obj\Debug\CollegeRegistration.MajorAddForm.resources
 X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\CollegeRegistration\obj\Debug\CollegeRegistration.SectionAddForm.resources
+X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\CollegeRegistration\obj\Debug\CollegeRegistration.csprojResolveAssemblyReference.cache

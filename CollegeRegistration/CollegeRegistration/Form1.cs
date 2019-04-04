@@ -25,30 +25,14 @@ namespace CollegeRegistration
             TableSelector.Items.Add("Faculty");
             TableSelector.Items.Add("Enrollments");
             TableSelector.Items.Add("Courses");
-            /*
-            updateStudentsList();
-            updateMajorsList();
 
-            var erics = RegistrationEntities.Students.Where(s => s.Name.StartsWith("E")).ToList();
-            erics = erics.Where(s => s.Major.College == "CECS").ToList();
-            foreach( var eric in erics )
-            {
-                ericsClassesLabel.Text += $"{eric.Name} - {eric.Major.Name} - {eric.Major.College}{Environment.NewLine}";
-            }
+            TableSelector2.Items.Add("Students");
+            TableSelector2.Items.Add("Sections");
+            TableSelector2.Items.Add("Majors");
+            TableSelector2.Items.Add("Faculty");
+            TableSelector2.Items.Add("Enrollments");
+            TableSelector2.Items.Add("Courses");
 
-            // linq to ojbects without lambda extensions syntax
-            
-            var query = from Student student in RegistrationEntities.Students
-                        where student.Name == "Eric"
-                        select student;
-
-           foreach( var result in query )
-            {
-                result.
-            }
-            */
-
-            //RegistrationEntities.Students.Remove()
         }
 
         private void addStudentButton_Click(object sender, EventArgs e)//this is the show stuff button
@@ -157,6 +141,52 @@ namespace CollegeRegistration
             CourseAddForm.Show();
         }
 
+
+        private void TableSelector2_SelectedIndexChanged(object sender, EventArgs e)//THIS EVENT UPDATES THE INFORMATION IN ENTRY SELECTOR
+        {
+            if (TableSelector2.Text == "Students")
+            {
+                var tempStudents = RegistrationEntities.Students.ToList();
+                EntrySelector.DataSource = tempStudents;
+                EntrySelector.DisplayMember = "ToStringy";
+
+            }
+            else if (TableSelector2.Text == "Courses")
+            {
+                var tempCourses = RegistrationEntities.Courses.ToList();
+                EntrySelector.DataSource = tempCourses;
+                EntrySelector.DisplayMember = "ToStringy";
+            }
+            else if (TableSelector2.Text == "Enrollments")
+            {
+                var tempEnrollments = RegistrationEntities.Enrollments.ToList();
+                EntrySelector.DataSource = tempEnrollments;
+                EntrySelector.DisplayMember = "ToStringy";
+            }
+            else if (TableSelector2.Text == "Faculty")
+            {
+                var temp = RegistrationEntities.Faculties.ToList();
+                EntrySelector.DataSource = temp;
+                EntrySelector.DisplayMember = "ToStringy";
+            }
+            else if (TableSelector2.Text == "Majors")
+            {
+                var temp = RegistrationEntities.Majors.ToList();
+                EntrySelector.DataSource = temp;
+                EntrySelector.DisplayMember = "ToStringy";
+            }
+            else if (TableSelector2.Text == "Sections")
+            {
+                var temp = RegistrationEntities.Sections.ToList();
+                EntrySelector.DataSource = temp;
+                EntrySelector.DisplayMember = "ToStringy";
+            }
+
+        }
+        private void EntrySelector_SelectedIndexChanged(object sender, EventArgs e)//THEY SELECT THIS, AND IT SHOULD update SORTEDLISTBOX
+        {
+
+        }
     }
 }
 
