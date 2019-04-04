@@ -59,7 +59,7 @@ namespace CollegeRegistration//still need to create this object in main form, an
             }
             if (textBox4.Modified)
             {
-                section.FacultyID = Convert.ToInt32(textBox4.Text)
+                section.FacultyID = Convert.ToInt32(textBox4.Text);
             }
             if (textBox3.Modified)
             {

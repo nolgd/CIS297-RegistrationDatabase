@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Problems>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0009</Rule>
+    <ProblemDescription>Avoid NVARCHAR of only 2 elements.</ProblemDescription>
+    <SourceFile>X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\Registration\Enrollment.sql</SourceFile>
+    <Line>6</Line>
+    <Column>13</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+</Problems>
