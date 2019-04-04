@@ -147,8 +147,90 @@ namespace CollegeRegistration
             if (TableSelector2.Text == "Students")
             {
                 var tempStudents = RegistrationEntities.Students.ToList();
+                EntrySelector2.DataSource = tempStudents;
+                EntrySelector2.DisplayMember = "ToStringy";
+
+            }
+            else if (TableSelector2.Text == "Courses")
+            {
+                var tempCourses = RegistrationEntities.Courses.ToList();
+                EntrySelector2.DataSource = tempCourses;
+                EntrySelector2.DisplayMember = "ToStringy";
+            }
+            else if (TableSelector2.Text == "Enrollments")
+            {
+                var tempEnrollments = RegistrationEntities.Enrollments.ToList();
+                EntrySelector2.DataSource = tempEnrollments;
+                EntrySelector2.DisplayMember = "ToStringy";
+            }
+            else if (TableSelector2.Text == "Faculty")
+            {
+                var temp = RegistrationEntities.Faculties.ToList();
+                EntrySelector2.DataSource = temp;
+                EntrySelector2.DisplayMember = "ToStringy";
+            }
+            else if (TableSelector2.Text == "Majors")
+            {
+                var temp = RegistrationEntities.Majors.ToList();
+                EntrySelector2.DataSource = temp;
+                EntrySelector2.DisplayMember = "ToStringy";
+            }
+            else if (TableSelector2.Text == "Sections")
+            {
+                var temp = RegistrationEntities.Sections.ToList();
+                EntrySelector2.DataSource = temp;
+                EntrySelector2.DisplayMember = "ToStringy";
+            }
+
+        }
+        private void EntrySelector_SelectedIndexChanged(object sender, EventArgs e)//THEY SELECT THIS, AND IT SHOULD update SORTEDLISTBOX
+        {
+            
+            if (TableSelector2.Text == "Students")
+            {
+                var tempStudents = RegistrationEntities.Students.ToList();
+
+
+                sortedListBox.DataSource = tempStudents[EntrySelector2.SelectedIndex].Enrollments.ToList();
+                sortedListBox.DisplayMember = "ToString";
+
+            }
+            else if (TableSelector2.Text == "Courses")
+            {
+                var tempCourses = RegistrationEntities.Courses.ToList();
+            }
+            else if (TableSelector2.Text == "Enrollments")
+            {
+                var tempEnrollments = RegistrationEntities.Enrollments.ToList();
+            }
+            else if (TableSelector2.Text == "Faculty")
+            {
+                var temp = RegistrationEntities.Faculties.ToList();
+            }
+            else if (TableSelector2.Text == "Majors")
+            {
+                var temp = RegistrationEntities.Majors.ToList();
+            }
+            else if (TableSelector2.Text == "Sections")
+            {
+                var temp = RegistrationEntities.Sections.ToList();
+            }
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //uh
+            if (TableSelector2.Text == "Students")
+            {
+                
+                var tempStudents = RegistrationEntities.Students.ToList();/*
                 EntrySelector.DataSource = tempStudents;
                 EntrySelector.DisplayMember = "ToStringy";
+                */
+
+                sortedListBox.DataSource = tempStudents[EntrySelector.SelectedIndex].Enrollments.ToList();
+                sortedListBox.DisplayMember = "ToString";
 
             }
             else if (TableSelector2.Text == "Courses")
@@ -181,11 +263,6 @@ namespace CollegeRegistration
                 EntrySelector.DataSource = temp;
                 EntrySelector.DisplayMember = "ToStringy";
             }
-
-        }
-        private void EntrySelector_SelectedIndexChanged(object sender, EventArgs e)//THEY SELECT THIS, AND IT SHOULD update SORTEDLISTBOX
-        {
-
         }
     }
 }
