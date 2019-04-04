@@ -3,3 +3,9 @@ X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistr
 X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\Registration\bin\Debug\Registration.pdb
 X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\Registration\obj\Debug\Registration.dll
 X:\GITBUB\CIS297-RegistrationDatabase\CIS297-RegistrationDatabase\CollegeRegistration\Registration\obj\Debug\Registration.pdb
+E:\Documents\GitHub\CIS297-RegistrationDatabase\CollegeRegistration\Registration\bin\Debug\Registration.dacpac
+E:\Documents\GitHub\CIS297-RegistrationDatabase\CollegeRegistration\Registration\bin\Debug\Registration.dll
+E:\Documents\GitHub\CIS297-RegistrationDatabase\CollegeRegistration\Registration\bin\Debug\Registration.pdb
+E:\Documents\GitHub\CIS297-RegistrationDatabase\CollegeRegistration\Registration\obj\Debug\Registration.sqlprojAssemblyReference.cache
+E:\Documents\GitHub\CIS297-RegistrationDatabase\CollegeRegistration\Registration\obj\Debug\Registration.dll
+E:\Documents\GitHub\CIS297-RegistrationDatabase\CollegeRegistration\Registration\obj\Debug\Registration.pdb
