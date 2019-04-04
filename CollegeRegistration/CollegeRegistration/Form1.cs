@@ -151,9 +151,11 @@ namespace CollegeRegistration
             }
             else if (TableSelector2.Text == "Courses by Department")
             {
-                var tempCourses = RegistrationEntities.Courses.ToList();
-                EntrySelector2.DataSource = tempCourses;
-                EntrySelector2.DisplayMember = "ToStringy";
+                var temp = RegistrationEntities.Courses.ToList();
+                var temp2 = (from Course student in RegistrationEntities.Courses
+                             select student.Department).Distinct().ToList();//.ToString();
+                EntrySelector2.DataSource = temp2;
+
             }
             else if (TableSelector2.Text == "Enrollments")
             {
@@ -176,8 +178,9 @@ namespace CollegeRegistration
             else if (TableSelector2.Text == "Sections by Semester")
             {
                 var temp = RegistrationEntities.Sections.ToList();
-                EntrySelector2.DataSource = temp;
-                EntrySelector2.DisplayMember = "ToStringy";
+                var temp2 = (from Section student in RegistrationEntities.Sections
+                             select student.Semester).Distinct().ToList();//.ToString();
+                EntrySelector2.DataSource = temp2;
             }
 
         }
@@ -195,9 +198,16 @@ namespace CollegeRegistration
             }
             else if (TableSelector2.Text == "Courses by Department")//course by department
             {
-                var tempCourses = RegistrationEntities.Courses.ToList();
+                var temp = RegistrationEntities.Courses.ToList();
+                var temp69 = (from Course student in RegistrationEntities.Courses
+                              where student.Department == EntrySelector2.Text
+                              select student).Distinct().ToList();//.ToString();
 
-                
+                sortedListBox.DataSource = temp69;
+                sortedListBox.DisplayMember = "ToStringy";
+
+
+
             }
             else if (TableSelector2.Text == "Enrollments")
             {
@@ -215,14 +225,20 @@ namespace CollegeRegistration
                 sortedListBox.DisplayMember = "ToStringy";
 
             }
-            else if (TableSelector2.Text == "Courses by Department")//need sections by semester
+            else if (TableSelector2.Text == "Sections by Semester")//need sections by semester
             {
                 var temp = RegistrationEntities.Sections.ToList();
+                var temp69 = (from Section student in RegistrationEntities.Sections
+                              where student.Semester == EntrySelector2.Text
+                              select student).Distinct().ToList();//.ToString();
+
+                sortedListBox.DataSource = temp69;
+                sortedListBox.DisplayMember = "ToStringy";
             }
 
         }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        /*
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)//entry selector 2
         {
             //uh
             if (TableSelector2.Text == "Students")
@@ -231,7 +247,7 @@ namespace CollegeRegistration
                 var tempStudents = RegistrationEntities.Students.ToList();/*
                 EntrySelector.DataSource = tempStudents;
                 EntrySelector.DisplayMember = "ToStringy";
-                */
+                
 
                 sortedListBox.DataSource = tempStudents[EntrySelector.SelectedIndex].Enrollments.ToList();
                 sortedListBox.DisplayMember = "ToString";
@@ -264,10 +280,17 @@ namespace CollegeRegistration
             else if (TableSelector2.Text == "Sections by Semester")
             {
                 var temp = RegistrationEntities.Sections.ToList();
-                EntrySelector.DataSource = temp;
-                EntrySelector.DisplayMember = "ToStringy";
+                var temp69 = (from Section student in RegistrationEntities.Sections
+                              where student.Semester == EntrySelector2.Text
+                              select student).Distinct().ToList().ToString();
+
+                sortedListBox.DataSource = temp69;
+                sortedListBox.DisplayMember = "ToStringy";
             }
-        }
+        }*/
+
+
+
     }
 }
 

@@ -41,7 +41,6 @@
             this.TableSelector2 = new System.Windows.Forms.ComboBox();
             this.EntrySelector2 = new System.Windows.Forms.ComboBox();
             this.sortedListBox = new System.Windows.Forms.ListBox();
-            this.EntrySelector = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // addStudentButton
@@ -165,28 +164,17 @@
             // sortedListBox
             // 
             this.sortedListBox.FormattingEnabled = true;
-            this.sortedListBox.Location = new System.Drawing.Point(589, 313);
+            this.sortedListBox.Location = new System.Drawing.Point(336, 313);
             this.sortedListBox.Margin = new System.Windows.Forms.Padding(2);
             this.sortedListBox.Name = "sortedListBox";
             this.sortedListBox.Size = new System.Drawing.Size(251, 173);
             this.sortedListBox.TabIndex = 20;
-            // 
-            // EntrySelector
-            // 
-            this.EntrySelector.FormattingEnabled = true;
-            this.EntrySelector.Location = new System.Drawing.Point(334, 313);
-            this.EntrySelector.Margin = new System.Windows.Forms.Padding(2);
-            this.EntrySelector.Name = "EntrySelector";
-            this.EntrySelector.Size = new System.Drawing.Size(251, 173);
-            this.EntrySelector.TabIndex = 21;
-            this.EntrySelector.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(962, 552);
-            this.Controls.Add(this.EntrySelector);
             this.Controls.Add(this.sortedListBox);
             this.Controls.Add(this.EntrySelector2);
             this.Controls.Add(this.TableSelector2);
@@ -222,7 +210,6 @@
         private System.Windows.Forms.ComboBox TableSelector2;
         private System.Windows.Forms.ComboBox EntrySelector2;
         private System.Windows.Forms.ListBox sortedListBox;
-        private System.Windows.Forms.ListBox EntrySelector;
     }
 }
 
