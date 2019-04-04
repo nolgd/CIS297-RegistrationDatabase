@@ -15,8 +15,8 @@ SET NUMERIC_ROUNDABORT OFF;
 GO
 :setvar DatabaseName "Registration"
 :setvar DefaultFilePrefix "Registration"
-:setvar DefaultDataPath "C:\Users\Lileeper\AppData\Local\Microsoft\VisualStudio\SSDT\CollegeRegistration"
-:setvar DefaultLogPath "C:\Users\Lileeper\AppData\Local\Microsoft\VisualStudio\SSDT\CollegeRegistration"
+:setvar DefaultDataPath "C:\Users\TableFancy\AppData\Local\Microsoft\VisualStudio\SSDT\CollegeRegistration"
+:setvar DefaultLogPath "C:\Users\TableFancy\AppData\Local\Microsoft\VisualStudio\SSDT\CollegeRegistration"
 
 GO
 :on error exit

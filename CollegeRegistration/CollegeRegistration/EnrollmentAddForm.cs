@@ -41,5 +41,36 @@ namespace CollegeRegistration
             RegistrationEntities.SaveChanges();
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int idd = Convert.ToInt32(textBox4.Text);
+            Enrollment enrollment = RegistrationEntities.Enrollments.Where(b => (b.Id == idd)).First();
+            RegistrationEntities.Enrollments.Remove(enrollment);
+            RegistrationEntities.SaveChanges();
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int idd = Convert.ToInt32(textBox4.Text);
+            Enrollment enrollment = RegistrationEntities.Enrollments.Where(b => (b.Id == idd)).First();
+            if (textBox1.Modified)
+            {
+                enrollment.SectionID = Convert.ToInt32(textBox1.Text);
+            }
+            if (textBox2.Modified)
+            {
+                enrollment.StudentID = Convert.ToInt32(textBox2.Text);
+            }
+            if (textBox3.Modified)
+            {
+                enrollment.Grade = textBox3.Text;
+            }
+
+
+            RegistrationEntities.SaveChanges();
+            this.Close();
+        }
     }
 }

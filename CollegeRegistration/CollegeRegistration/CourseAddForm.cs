@@ -40,8 +40,8 @@ namespace CollegeRegistration
 
         private void button2_Click(object sender, EventArgs e)//delete
         {
-            int credits = Convert.ToInt32(textBox3.Text);
-            Course course = RegistrationEntities.Courses.Where(b => (b.Name == textBox2.Text) && (b.Number == textBox2.Text)&&(b.Credits==credits)&&(b.Department==textBox4.Text)).First();
+            int idd = Convert.ToInt32(textBox5.Text);
+            Course course = RegistrationEntities.Courses.Where(b => (b.Id == idd)).First();
             RegistrationEntities.Courses.Remove(course);
             RegistrationEntities.SaveChanges();
             this.Close();
@@ -61,7 +61,7 @@ namespace CollegeRegistration
             }
             if (textBox3.Modified)
             {
-                course.Credits = Convert.ToInt32(textBox1.Text);
+                course.Credits = Convert.ToInt32(textBox3.Text);
             }
             if (textBox4.Modified)
             {
@@ -71,6 +71,26 @@ namespace CollegeRegistration
 
             RegistrationEntities.SaveChanges();
             this.Close();
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CourseAddForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

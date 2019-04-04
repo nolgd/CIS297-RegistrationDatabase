@@ -36,5 +36,32 @@ namespace CollegeRegistration
             RegistrationEntities.SaveChanges();
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int idd = Convert.ToInt32(textBox3.Text);
+            Major major = RegistrationEntities.Majors.Where(b => (b.Id == idd)).First();
+            RegistrationEntities.Majors.Remove(major);
+            RegistrationEntities.SaveChanges();
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int idd = Convert.ToInt32(textBox3.Text);
+            Major major = RegistrationEntities.Majors.Where(b => (b.Id == idd)).First();
+            if (textBox1.Modified)
+            {
+                major.Name = textBox1.Text;
+            }
+            if (textBox2.Modified)
+            {
+                major.College = textBox2.Text;
+            }
+
+
+            RegistrationEntities.SaveChanges();
+            this.Close();
+        }
     }
 }
